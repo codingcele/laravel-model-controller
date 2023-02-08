@@ -1,12 +1,10 @@
 @extends('layouts.main-layout')
 
 @section('content')
-    <h1>DEGREES</h1>
-    <div id="test">
-        <ul>
-            @foreach ($degrees as $degree)
-                <li>{{ $degree -> name }} - {{ $degree -> level }}</li>
-            @endforeach
-        </ul>
-    </div>
+    <h1 class="text-danger">Movies</h1>
+    <ul>
+        @foreach ($movies as $movie)
+            <li>{{ $movie -> title }}</li>
+        @endforeach
+    </ul>
 @endsection

@@ -4,18 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Models\Degrees;
+use App\Models\Movies;
 
 class MainController extends Controller
 {
     public function home() {
 
 
-        $degrees = Degrees::all();
+        $movies = Movies::all();
     
         $data = [
-    
-            'degrees' => $degrees
+            "movies" => $movies
         ];
     
         return view('pages.home', $data);
